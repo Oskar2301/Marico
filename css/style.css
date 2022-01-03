@@ -1,0 +1,936 @@
+body{
+    background: black;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+
+}
+#logo-company{
+    width: 12%;
+}
+ul{
+    list-style: none;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-ul-p li:first-child{
+    margin-top: 10px;
+}
+.nav-ul-p{
+    position: absolute;
+    display: none;
+}
+.nav-ul li:hover > .nav-ul-p{
+    display: block;
+}
+.nav-ul-p li{
+    margin-bottom: 10px;
+}
+nav li{
+    margin-left: 30px;
+}
+nav li svg{
+    margin-left: 10px;
+
+}
+nav span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #707070;
+    transition: all ease 0.3s;
+}
+nav span:hover{
+    color: #3C82F4;
+}
+nav a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #707070;
+    transition: all ease 0.3s;
+}
+nav a:hover{
+    color: #3C82F4;
+}
+.sign-up div{
+    display: inline-block;
+}
+.sign-up a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #707070;
+    transition: all ease 0.3s;
+}
+.sign-up a:hover{
+    color: #3C82F4;
+}
+.sign-up-button{
+    margin-left: 20px;
+    width: 100px;
+    height: 45px;
+    background: #306EF7;
+    text-align: center;
+    border-radius: 10%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    transition: all ease 0.3s;
+}
+.sign-up-button:hover{
+    transform: scale(1.1);
+    box-shadow: #021b50 0px 5px 15px;
+}
+.sign-up-button a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.sign-up-button a:hover{
+    color: #FFFFFF;
+}
+.burger{
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 20px;
+}
+.burger:after,.burger:before{
+    content:'';
+    background-color: white;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.burger.active:after,.burger.active:before, .burger.active span{
+    background-color: black;
+}
+.burger:before{
+    top: 0;
+}
+.burger:after{
+    bottom: 0;
+}
+.burger span{
+    position: absolute;
+    background-color: white;
+    left:0;
+    width: 25px;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+}
+
+.top-s{
+    text-align: center;
+    margin-top: 100px;
+}
+.top-s h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: #FFFFFF;
+    margin:0px;
+    max-width: 100%;
+}
+.top-s h2{
+    margin:0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+}
+.top-s p{
+    margin-top: 130px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.Started{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.Started .get{
+    width: 313px;
+    height: 77px;
+    background: #326CF9;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    transition: all 0.3s ease 0s;
+}
+.Started .get a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.Started .get:hover{
+    background: black;
+    border: 1px solid #326CF9;
+    color: #326CF9;
+}
+.Started .view{
+    width: 312px;
+    height: 76px;
+    border: 1px solid #707070;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    transition: all 0.3s ease 0s;
+}
+.Started .view:hover{
+    background: white;
+    border: 0px;
+    color: white;
+}
+.Started .view a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #707070;
+    text-decoration: none;
+}
+.online-started{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.online-started svg{
+    margin-top:5px;
+}
+.online-started h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+.online-started p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    color: #707070;
+    margin: 0px;
+    padding-left: 10px;
+}
+.love-marico h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 112px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.reason {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.reason h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+.reason p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+    color: #707070;
+}
+.emoji {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.r-3 {
+    margin-top: -8px;
+}
+.r-3 h1{
+    padding-top: 10px;
+}
+.step-1 .connect{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.step-1 .connect h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3D82F2;
+    text-align: center;
+    margin: 0;
+}
+.step-1 .connect h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 4px;
+}
+.step-1 .connect p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #707070;
+    margin: 0;
+}
+.step-1 .connect div{
+    width: 312px;
+    max-width: 80%;
+    height: 76px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 24px;
+    transition: all 0.3s ease 0s;
+}
+.step-1 .connect div:hover{
+    background-color: white;
+    border: 0;
+}
+.step-1 .connect div a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #707070;
+    text-decoration: none;
+}
+.step-1-home{
+    justify-content: space-around;
+    margin-top: 15%;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+.step-1-home .homepage h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.step-1-home .homepage h1 span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    color: #3C82F4;
+}
+
+.step-1-home .homepage h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+.step-1-home .homepage-img{
+    width: 50%;
+}
+.step-1-home .homepage-img img{
+    max-width: 100%;
+
+}
+.step-1-home .homepage .svg-step-1{
+    margin-top: 40px;
+}
+.step-1-home .homepage .svg-step-1 div{
+    display: flex;
+    margin-bottom: 10px;
+}
+.step-1-home .homepage .svg-step-1 p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin:0;
+    padding-left: 10px;
+}
+.step-1-home .homepage .button-1step{
+    margin-top:50px;
+    display: flex;
+    text-align: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.step-1-home .homepage .button-1step .get-start{
+    width: 207px;
+    height: 65px;
+    background: #326CF9;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease 0s;
+}
+.step-1-home .homepage .button-1step .get-start:hover{
+    background: black;
+    border: 1px solid #326CF9;
+    color: #326CF9;
+
+}
+.step-1-home .homepage .button-1step .get-start a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.step-1-home .homepage .button-1step .view-start{
+    width: 207px;
+    height: 65px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease 0s;
+}
+.step-1-home .homepage .button-1step .view-start:hover{
+    background: white;
+    border: 0px;
+    color: white;
+}
+.step-1-home .homepage .button-1step .view-start a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #707070;
+    text-decoration: none;
+}
+.step-2 {
+    margin-top: 15%;
+    text-align: center;
+}
+.step-2 h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 38px;
+        color: #3D82F2;
+}
+    .step-2 h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.step-2 p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #707070;
+    margin: 0;
+}
+.step-2-1{
+
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.step-2-1 div{
+    background: #0D0D0D;
+    width: 40%;
+    max-width: 40%;
+    padding-left: 25px;
+}
+.step-2-1 div img{
+    width: 100%;
+    padding-left: 15%;
+}
+.step-2-1 div h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #0FC65C;
+    margin-bottom: 8%;
+}
+.step-2-1 div h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #919191;
+    margin: 0;
+}
+.step-2-1 div h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 5%;
+}
+#step-3{
+    font-weight: normal;
+}
+
+#homepage-31 h1{
+    font-size: 3rem;
+}
+#homepage-31 h1 span{
+    font-size: 3rem;
+}
+#homepage-31 p{
+    font-size: 1rem;
+}
+.expert{
+    margin-top: 5%;
+}
+.expert .expert-title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 3%;
+}
+.expert img{
+    max-width: 100%;
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+}
+.creators{
+    margin-top: 15%;
+    position: relative;
+    text-align: center;
+}
+.creators img{
+    max-width: 100%;
+}
+.creators .creators-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+.online-started h2{
+    margin: 0;
+}
+.get-started-now{
+    margin-top: 15%;
+    text-align: center;
+}
+.get-started-now .logo-company img{
+    max-width: 100%;
+    display: block;
+    width: 8%;
+    margin: 0 auto;
+}
+.title-company{
+    margin-top: 2%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF
+}
+.article-company{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.input-company{
+    margin: 0 auto;
+    text-align: center;
+    width: 307px;
+    height: 70px;
+    background: #326CF9;
+    box-sizing: border-box;
+    padding-top: 18px;
+    border-radius: 17px;
+    transition: all 0.3s ease 0s;
+}
+.input-company:hover{
+    background: black;
+    border: 1px solid #326CF9;
+    color: #326CF9;
+}
+.input-company a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo-footer .marico-footer{
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo-footer .marico-footer img{
+    max-width: 100%;
+}
+.email-footer{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #707070;
+    padding-left: 70px;
+}
+.logo-footer .marico-footer .Marico{
+    font-style: normal;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+.nav-footer{
+    padding-right: 120px;
+}
+.nav-footer a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    color: #707070;
+    margin-left: 40px;
+    transition: all 0.3s ease 0s;
+}
+.nav-footer a:hover{
+    color: #326CF9;
+}
+@media screen and (max-width: 1100px){
+    .creators .creators-title{
+        font-size: 190%;
+    }
+}
+@media screen and (max-width: 870px){
+    .creators .creators-title{
+        font-size: 150%;
+    }
+    .input-company{
+        width: 170px;
+        padding-top: 15px;
+        height: 55px;
+    }
+    .logo-footer .marico-footer .Marico,.title-company,.expert .expert-title,#homepage-31 h1,.step-2-1 div h2, .step-2-1 div h1,.top-s h2, .step-2 h1, .top-s h1, .step-1-home .homepage h1 , .love-marico h2 , .step-1 .connect h1{
+        font-size: 190%;
+    }
+    .step-2-1 div img{
+        padding-left: 0;
+    }
+    .top-s .Started div{
+        max-width: 70%;
+        height: 60px;
+        padding-top: 13px;
+    }
+    .step-1-home .homepage h1 span, #homepage-31 h1 span{
+        font-size: 33px;
+    }
+    .nav-footer{
+        padding-right: 30px;
+    }
+    .logo-footer .marico-footer{
+        padding-left: 30px;
+    }
+    .top-s h2{
+        margin-bottom: -70px
+    }
+    .nav-footer a,.input-company a{
+        font-size: 110%;
+    }
+    .email-footer{
+        font-size: 120%;
+        padding-left: 20px;
+    }
+    .article-company ,#homepage-31 p,.step-2-1 div h3, .step-1-home .homepage .svg-step-1 p, .step-2 p{
+        font-size: 90%;
+    }
+    .top-s p{
+        font-size: 170%;
+        line-height: 40px;
+    }
+    .burger{
+        position: absolute;
+        max-width: 100%;
+        display: block;
+        z-index: 2;
+        left: 90%;
+    }
+    .burger_menu a, .burger_menu span{
+        width: 100%;
+        text-transform: uppercase;
+    }
+    .burger_menu{
+        position: fixed;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        text-align: right;
+        top: -100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+    }
+    .burger_menu.active{
+        top:0;
+    }
+    .nav-ul{
+        display: block;
+        margin-top: 70px;
+        margin-right: 10px;
+    }
+    .nav-ul li{
+        padding: 30px 10px 0px 10px;
+    }
+    #logo-company{
+        z-index: 2;
+        position: absolute;
+        left: 30px;
+        width: 25%;
+    }
+    .nav-ul-p{
+        position: fixed;
+        text-align: right;
+        left: 30%;
+    }
+    .sign-up{
+        z-index: 2;
+        padding-left: 90px;
+        margin-top: -5px;
+    }
+    .sign-up a{
+        font-size: 14px;
+    }
+    .sign-up-button{
+        width: 70px;
+        padding: 0;
+        height: 30px;
+    }
+    .burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .burger.active span{
+        transform: scale(0);
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    .online-started p{
+        font-size: 16px;
+    }
+    .online-started h2{
+        font-size: 16px;
+    }
+    .step-1 .connect p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 490px){
+ .top-s p{
+     font-size: 120%;
+ }
+    .love-marico h2, .step-2-1 div h2, .step-2-1 div h1{
+        font-size: 140%;
+    }
+    .online-started h2{
+        font-size: 16px;
+    }
+    .step-1 .connect p, .step-2-1 div h3{
+        font-size: 12px;
+    }
+    .step-2 p{
+        font-size: 0.6rem;
+    }
+    .step-1 .connect h1, .step-2 h1{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 500px){
+    .sign-up a{
+        font-size: 18px;
+    }
+    .sign-up-button{
+        width: 100px;
+        padding-top: 5px;
+        height: 40px;
+    }
+
+}
+@media screen and (min-width: 450px) and (max-width: 870px){
+    .nav-ul-p{
+        left: 40%;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 870px){
+    .nav-ul-p{
+        left: 50%;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 870px){
+    .nav-ul-p{
+        left: 60%;
+    }
+}
+@media screen and (min-width: 870px) and (max-width: 1100px) {
+    .top-s h2, .top-s h1 {
+        font-size: 50px ;
+    }
+}
+@media screen and (max-width: 380px){
+    .top-s p{
+        font-size: 100%;
+    }
+   .top-s h2, .top-s h1, .step-1-home h1, .step-1-home h1 span{
+        font-size: 150%;
+    }
+    #homepage-31 h1, .expert .expert-title{
+        font-size: 20px;
+    }
+    .online-started p,  #homepage-31 p, #homepage-31 h2{
+        font-size: 12px;
+    }
+    #homepage-31 p{
+        font-size: 10px;
+    }
+    .online-started h2,  #homepage-31 h1 span{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1340px){
+    .step-1-home .homepage-img{
+        width: 80%;
+    }
+    .step-1-home .homepage h2{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 350px){
+    .top-s .Started div{
+        height: 70px;
+    }
+}
+@media screen and (max-width: 700px){
+    .nav-footer a{
+        font-size: 90%;
+        margin-left: 20px;
+    }
+    .logo-footer .marico-footer img{
+        width: 20%;
+    }
+    .email-footer{
+        font-size: 90%;
+    }
+    .logo-footer .marico-footer .Marico{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 520px){
+    .nav-footer{
+        padding-right: 0;
+    }
+
+    .logo-footer .marico-footer{
+    padding-left: 0;
+    }
+    .logo-footer .email-footer{
+        padding-left: 0;
+    }
+
+    .nav-footer a{
+        font-size: 80%;
+        margin-left: 10px;
+    }
+    .logo-footer .marico-footer img{
+        width: 15%;
+    }
+    .email-footer{
+        font-size: 70%;
+    }
+    .logo-footer .marico-footer .Marico{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 610px){
+    .creators .creators-title{
+        font-size: 110%;
+    }
+}
+@media screen and (max-width: 470px){
+    .creators .creators-title{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 350px){
+    .creators .creators-title{
+        font-size: 70%;
+    }
+    .nav-footer a{
+        font-size: 70%;
+        margin-left: 5px;
+    }
+}
